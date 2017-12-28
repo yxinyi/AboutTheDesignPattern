@@ -19,9 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MapSite.h" />
     <ClInclude Include="Maze.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractFactory.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Maze.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
