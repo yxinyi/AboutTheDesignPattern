@@ -1,32 +1,26 @@
 #pragma once
 #include <stdio.h>
-
-class A1 {
-public:
-    A1() {
-        printf("A1() \n");
-    }
-    void printA() {
-        printf("A1 \n");
-    }
-};
-
-class A2: public A1 {
-public:
-    A2() {
-        printf("A2() \n");
-
-    }
-    void printA() {
-        printf("A2 \n");
-    }
-};
+#include "builder.h"
+//#include "AbstractFactory.cpp"
 
 int main() {
-    A1 a1;
-    a1.printA();
-    A2 a2;
-    a2.printA();
+
+    ////AbstractFactory Mode
+    //AbstractFactory::MazeGame maze;
+    //AbstractFactory::SkyMazeFactiory skyFactiory;
+    //maze.CreaterMaze(skyFactiory);
+    //AbstractFactory::EnchantedMazeFactiory enchantedFactiory;
+    //maze.CreaterMaze(enchantedFactiory);
+    //for (;;);
+    //return 0;
+    
+
+
+    // Builder Mode
+    Maze* maze  = 0;
+    Builder::MazeGame mazeGame ;
+    Builder::StandardMazeBuilder mazeBuileder;
+    maze = mazeGame.CreateMaze(mazeBuileder);
     for (;;);
     return 0;
 }
