@@ -20,14 +20,20 @@ private:
 class Room : public MapSite {
 public:
     Room(int roomNO = 0) {
-        printf("creater room \n");
+        _roomNumber = roomNO;
+        printf("creater room %d \n", _roomNumber);
+    }
+
+    int GetMyRoomNo() {
+        printf("Room: GetMyRoomNo  \n");
+        return _roomNumber;
     }
 
     MapSite* GetSide(Direction theDirection) const {
 
     }
     void SetSide(Direction theDirection, MapSite* a) {
-
+        _sides[theDirection] = a;
     }
     virtual void Enter() {}
 private:

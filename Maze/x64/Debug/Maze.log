@@ -1,7 +1,7 @@
-﻿  builder.cpp
+﻿  main.cpp
   正在生成代码...
   正在跳过...(未检测到相关更改)
   MazeBasic.cpp
-  main.cpp
+  FactoryMethod.cpp
   Maze.vcxproj -> F:\Maze\AboutTheDesignPattern\Maze\x64\Debug\Maze.exe
   Maze.vcxproj -> F:\Maze\AboutTheDesignPattern\Maze\x64\Debug\Maze.pdb (Full PDB)

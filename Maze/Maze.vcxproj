@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="builder.h" />
+    <ClInclude Include="FactoryMethod.h" />
     <ClInclude Include="MapSite.h" />
     <ClInclude Include="Maze.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFactory.cpp" />
     <ClCompile Include="builder.cpp" />
+    <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Maze.cpp" />
     <ClCompile Include="MazeBasic.cpp" />
