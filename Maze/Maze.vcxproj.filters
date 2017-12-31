@@ -27,6 +27,9 @@
     <ClInclude Include="FactoryMethod.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="prototype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Maze.cpp">
@@ -45,6 +48,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="FactoryMethod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtoType.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

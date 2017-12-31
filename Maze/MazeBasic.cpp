@@ -25,18 +25,18 @@ public:
     }
 
     int GetMyRoomNo() {
-        printf("Room: GetMyRoomNo  \n");
+        printf("Room: GetMyRoomNo  : %d \n", _roomNumber);
         return _roomNumber;
     }
 
     MapSite* GetSide(Direction theDirection) const {
-
+        return _sides[theDirection];
     }
     void SetSide(Direction theDirection, MapSite* a) {
         _sides[theDirection] = a;
     }
     virtual void Enter() {}
-private:
+protected:
     MapSite* _sides[4];
     int _roomNumber;
 };

@@ -30,11 +30,9 @@ namespace FactoryMethod {
         }
 
         int GetMyRoomNo() {
-            printf("BoomRoom: GetMyRoomNo  \n");
+            printf("BoomRoom: GetMyRoomNo  _roomNumber: %d\n", _roomNumber);
             return _roomNumber;
         }
-    private:
-        int _roomNumber;
     };
     class BoomMazeGame : public MazeGame {
     public:

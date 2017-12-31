@@ -3,6 +3,7 @@
 #include "builder.h"
 #include "FactoryMethod.h"
 //#include "AbstractFactory.cpp"
+#include "prototype.h"
 
 int main() {
 
@@ -26,9 +27,19 @@ int main() {
     //return 0;
 
     //FactoryMethod
-    Maze* maze  = 0;
-    FactoryMethod::BoomMazeGame mazeGame ;
-    maze = mazeGame.CreateMaze();
+    //Maze* maze  = 0;
+    //FactoryMethod::BoomMazeGame mazeGame ;
+    //maze = mazeGame.CreateMaze();
+    //for (;;);
+    //return 0;
+
+
+    //prototype
+    ProtoType::Maze maze;
+    ProtoType::MazeGame mazeGame;
+    
+    ProtoType::MazeProtoTypeFactory factory(new ProtoType::Room(1) , new ProtoType::Maze) ;
+    maze = mazeGame.CreaterMaze(factory);
     for (;;);
     return 0;
 }
